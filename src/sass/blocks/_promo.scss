@@ -1,7 +1,7 @@
 .promo {
 	min-height: 100vh;
 	position: relative;
-	background: url('../img/promo_bg.jpg') no-repeat 50%/cover;
+	background: linear-gradient(180deg, $second-color 0%, $main-color 55%, $theme-color 100%);
 	padding-top: 205px;
 	&__title {
 		margin-top: 15px;
