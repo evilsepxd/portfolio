@@ -1,0 +1,100 @@
+.resume {
+	padding-top: 120px;
+	&__wrapper {
+		padding: 60px 65px 0;
+		display: grid;
+		grid-template-columns: repeat(2, 425px);
+		column-gap: 135px;
+	}
+	&__column {
+		&-title {
+			position: relative;
+			padding-left: 35px;
+			&:before {
+				position: absolute;
+				content: '';
+				width: 15px;
+				height: 15px;
+				background: $main-color;
+				border-radius: 100%;
+				left: -7px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+		ul {
+			list-style-type: none;
+			li {
+				position: relative;
+				&:after {
+					position: absolute;
+					content: '';
+					width: 1px;
+					height: 100%;
+					top: -8px;
+					left: 0;
+					background-color: $text-color;
+					transition: .5s all;
+				}
+				&:hover {
+					.resume__item-icon:before {
+						background: $text-color;
+					}
+					path {
+						fill: $main-color;
+					}
+					&:after {
+						background-color: $main-color;
+					}
+					.resume__column-title::before {
+						background: $text-color;
+					}
+					.resume__item:before {
+						background-color: $main-color;
+					}
+				}
+			}
+		}
+	}
+	&__item {
+		&:before {
+			content: '';
+			height: 1px;
+			width: 43px;
+			position: absolute;
+			background-color: $text-color;
+			top: 63px;
+			transition: .5s all;
+		}
+		&-head {
+			position: relative;
+			padding: 45px 0 0 100px;
+			path {
+				fill: $text-color;
+				transition: .5s all;
+			}
+		}
+		&-body {
+			padding: 12px 0 0 43px;
+		}
+		&-icon {
+			position: absolute;
+			bottom: 0;
+			left: 61px;
+			@include before-circle;
+			&:before {
+				top: -14px;
+				left: -18px;
+				transition: .5s all;
+			}
+		}
+		&-location {
+			font-size: 12px;
+			line-height: normal;
+		}
+		&-body {
+			font-size: 12px;
+			line-height: normal;
+		}
+	}
+}

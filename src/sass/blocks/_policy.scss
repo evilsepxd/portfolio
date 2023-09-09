@@ -1,0 +1,14 @@
+.policy {
+	padding-top: 30px;
+	&__title {
+		text-align: center;
+	}
+	&__sub-list {
+		&-item {
+			list-style-type: none;
+		}
+	}
+	a {
+		color: $main-color;
+	}
+}

@@ -1,0 +1,268 @@
+@media (max-width: 1439px) {
+	.side-panel {
+		display: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+	.about {
+		&__wrapper {
+			grid-template-columns: 400px 510px;
+			gap: 50px;
+		}
+		&__skills {
+			column-gap: 20px;
+			grid-template-columns: repeat(2, 245px);
+			&-item {
+				grid-template-columns: 40px 195px;
+    				column-gap: 10px;
+			}
+		}
+	}
+	.resume {
+		&__wrapper {
+			padding: 60px 30px 0;
+			column-gap: 80px;
+			grid-template-columns: repeat(2, 410px);
+		}
+	}
+	.skills {
+		&__wrapper {
+			grid-template-columns: repeat(3, 270px);
+			justify-content: space-around;
+		}
+	}
+	.metrics {
+		grid-template-columns: repeat(2, 350px);
+		justify-content: space-around;
+	}
+	.works {
+		&__wrapper {
+			grid-template-columns: repeat(auto-fit, 280px);
+			justify-content: center;
+			.horizontal, .vertical {
+				grid-column: unset;
+				grid-row: unset;
+			}
+		}
+	}
+	.contacts {
+		&__wrapper {
+			padding: 0;
+			grid-template-columns: 300px 550px;
+			justify-content: space-around;
+		}
+		&__form {
+			grid-template-columns: repeat(2, 260px);
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+	.title {
+		&_fz36 {
+			font-size: 30px;
+		}
+	}
+	.about {
+		&__wrapper {
+			grid-template-columns: 300px 380px;
+		}
+		&__skills {
+			grid-template-columns: 380px;
+			grid-auto-rows: minmax(115px, auto);
+			&-item {
+				grid-template-columns: 40px 320px;
+    				column-gap: 20px;
+			}
+		}
+	}
+	.resume {
+		&__wrapper {
+			padding: 60px 0 0;
+			column-gap: 40px;
+			grid-template-columns: repeat(2,340px);
+		}
+	}
+	.skills {
+		&__wrapper {
+			grid-template-columns: repeat(2, 270px);
+			justify-content: space-around;
+		}
+	}
+	.metrics {
+		column-gap: 20px;
+	}
+	.price {
+		&__wrapper {
+			grid-template-columns: repeat(auto-fit, 350px);
+			padding: 60px 0 0;
+		}
+	}
+	.contacts {
+		padding-top: 46px;
+		&__wrapper {
+			grid-template-columns: auto;
+		}
+		&__photo {
+			display: none;
+		}
+		&__form {
+			column-gap: 20px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+	.title {
+		&_fz48 {
+			font-size: 34px;
+			line-height: 40px;
+		}
+		&_fz20 {
+			font-size: 20px;
+		}
+	}
+	.promo {
+		padding-top: 230px;
+		&__title {
+			margin-top: 15px;
+		}
+		h2 {
+			margin-top: 0;
+		}
+	}
+	.about {
+		padding-top: 40px;
+		&__wrapper {
+			grid-template: 400px auto auto / 1fr;
+		}
+		&__photo {
+			grid-row: unset;
+		}
+		&__skills {
+			grid-template-columns: repeat(2, 260px);
+			&-item {
+				grid-template-columns: 40px 200px;
+    				column-gap: 20px;
+			}
+		}
+	}
+	.resume {
+		padding-top: 46px;
+		&__wrapper {
+			grid-template-columns: repeat(2, 255px);
+			column-gap: 30px;
+		}
+	}
+	.skills {
+		padding-top: 46px;
+		&__wrapper {
+			padding: 60px 15px 0;
+			grid-template-columns: 270px;
+			justify-content: center;
+		}
+	}
+	.metrics {
+		padding-top: 40px;
+		grid-template-columns: 300px;
+		justify-content: center;
+	}
+	.works {
+		padding-top: 40px;
+	}
+	.price {
+		padding-top: 46px;
+		&__wrapper {
+			justify-content: center;
+			padding-top: 20px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		width: 100%;
+		padding: 0 10px;
+	}
+	.title {
+		&_fz48 {
+			font-size: 26px;
+		}
+		&_fz36 {
+			font-size: 24px;
+		}
+		&_fz20 {
+			font-size: 18px;
+		}
+	}
+	.hamburger {
+		right: 20px;
+	}
+	.menu {
+		&__block {
+			width: 250px;
+			padding-left: 20px;
+		}
+	}
+	.promo {
+		&__buttons {
+			margin-top: 30px;
+		}
+	}
+	.about {
+		&__wrapper {
+			grid-template: 340px auto auto / 1fr;
+			row-gap: 30px;
+		}
+		&__skills {
+			grid-template-columns: 1fr;
+		}
+	}
+	.resume {
+		&__wrapper {
+			grid-template-columns: 300px;
+			padding-left: 7px;
+			row-gap: 40px;
+		}
+	}
+	.price {
+		&__wrapper {
+			grid-template-columns: 300px;
+			row-gap: 20px;
+		}
+	}
+	.contacts {
+		&__wrapper {
+			justify-content: unset;
+		}
+		&__form {
+			grid-template: 45px 45px 190px 45px/ 300px;
+			column-gap: unset;
+			justify-content: center;
+		}
+		&__textarea {
+			grid-column: unset;
+		}
+		&__triggers {
+			grid-column: unset;
+			grid-template-columns: auto;
+			row-gap: 20px;
+		}
+		&__policy {
+			grid-row: 1/2;
+		}
+		&__btn {
+			grid-row: 2/3;
+		}
+	}
+}
